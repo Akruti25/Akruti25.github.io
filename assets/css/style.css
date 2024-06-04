@@ -833,9 +833,6 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
 
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
@@ -1459,4 +1456,14 @@ footer .credits {
 
 footer .credits a {
   color: #fff;
+}
+
+/*---- my addition*/
+.custom-link {
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Ensure the text is bold */
+}
+
+.about-img img {
+  border-radius: 50%;
 }
