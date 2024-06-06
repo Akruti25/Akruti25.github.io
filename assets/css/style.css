@@ -9,9 +9,18 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200,700,500);
+
 body {
   background-color: rgb(240 240 240);;
   color: #4e4e4e;
+}
+.education{
+  height: 100%;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  padding: 0;
+  overflow: hidden;
 }
 
 
@@ -827,48 +836,186 @@ body, html {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.service-box {
-  background-color: #fff;
-  padding: 2.5rem 1.3rem;
-  border-radius: 1rem;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-
-.service-box:hover .ico-circle {
-  transition: all 500ms ease;
-  color: #fff;
-  background-color: #0078ff;
-  box-shadow: 0 0 0 10px #cde1f8;
-}
-
-.service-box .service-ico {
-  margin-bottom: 1rem;
-  color: #1e1e1e;
-}
-
-.service-box .ico-circle {
-  transition: all 500ms ease;
-  display: inline-flex;
+.education {
+  display: flex;
+  height: 100%;
   align-items: center;
+  flex-flow: row;
   justify-content: center;
+  transition: background .5s ease;
 }
 
-.service-box .ico-circle i {
-  line-height: 0;
-  font-size: 40px;
+#next, #previous {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  color: #000;
+  background-color: lightgray;
 }
 
-.service-box .s-title {
-  font-size: 1.4rem;
-  text-transform: uppercase;
+#next {
+  right: -120px;
+  color: #000;
+}
+
+#previous {
+  left: -120px;
+  color: #000;
+}
+
+.arrow {
+  width: 60px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 50px;
+  color: #000;
+}
+
+.user-image {
+  background: url('https://www.jamesgmartin.center/wp-content/uploads/2021/09/wolf-pack-5065768_1920-1200x800.jpg');
+  background-size: cover;
+  height: 80%;
+  background-position: right;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.user-image2 {
+  background: url('https://magarticles.magzter.com/articles/410/236636/59a598a8e876f/Manipal-University-Jaipur-Fostering-Academic-Excellence.jpg');
+  background-size: cover;
+  height: 80%;
+  background-position: center; /* Changed to center */
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.username {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 35px 0 80px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  z-index: 1;
+}
+
+.user-info {
+  height: 15%;
+}
+
+.quote {
+  padding: 18px 25px 0;
+  box-sizing: border-box;
+  font-weight: 300;
   text-align: center;
-  padding: 0.4rem 0;
 }
 
-.service-box .s-description {
-  color: #4e4e4e;
+.card-wrapper {
+  position: relative;
+  width: 90vw;  /* 90% of the viewport width */
+  height: 90vh; /* 90% of the viewport height */
+  max-width: 500px;  /* Set a max width */
+  max-height: 650px; /* Set a max height */
+  box-sizing: border-box;
 }
+
+.main-window, .second-window {
+  background: #fff;
+  height: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+  position: relative;
+  z-index: 20;
+  transition: all .3s ease-in;
+}
+
+.second-window {
+  height: 650px;
+  width: 500px; /* Ensure consistent width */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  transform: translate(5px, 5px);
+  margin: auto;
+  transition: all .3s ease-in;
+}
+
+.focus, .animated-focus, .animated-back, .back, .middle {
+  transition: all .3s ease-in;
+}
+
+.animated-focus, .focus {
+  transform: translate(0, 0);
+  z-index: 40;
+}
+
+.animated-back, .back {
+  transform: translate(10px, 10px);
+  z-index: 5;
+}
+
+.middle {
+  transform: translate(5px, 5px);
+  z-index: 15;
+}
+
+ @keyframes movecard-front {
+  
+}
+@keyframes movecard{
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+
+}
+
+@-webkit-keyframes movecard {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+@-webkit-keyframes movecard-front {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-15px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .second-window, .third-window {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Counter
