@@ -261,54 +261,6 @@ import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/thre
 
   // main.js
   //education section
-  var previousCard = document.getElementById('previous');
-  var nextCard = document.getElementById('next');
   
-  var cards = [
-    ['main-window'],
-    ['second-window']
-  ];
-  
-  nextCard.addEventListener('click', function() {
-    setNextCard();
-  });
-  
-  previousCard.addEventListener('click', function() {
-    setPreviousCard();
-  });
-  
-  function setNextCard() {
-    var elm = cards.shift();
-    cards.push(elm);
-    updateCard('forward');
-  }
-  
-  function setPreviousCard() {
-    var elm = cards.pop();
-    cards.unshift(elm);
-    updateCard('backward');
-  }
-  
-  function updateCard(direction) {
-    for (var i = 0; i < cards.length; i++) {
-      var element = document.getElementById(cards[i][0]);
-      element.classList.remove('animated-back', 'focus', 'back', 'middle', 'animated-focus');
-  
-      if (i === 0) {
-        if (direction === 'forward') {
-          element.classList.add('focus');
-        } else {
-          element.classList.add('animated-focus');
-        }
-        document.getElementById('education').style.background = cards[i][1];
-      } else if (i === 1) {
-        if (direction === 'forward') {
-          element.classList.add('animated-back');
-        } else {
-          element.classList.add('back');
-        }
-      }
-    }
-  }
   
 })()
