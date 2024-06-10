@@ -1253,8 +1253,8 @@ body, html {
     --penguin-belly: #FFFACD;
     --penguin-beak: #F4A460;
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     border-radius: 120%;
     box-shadow: 1px 5px 10px orange;
     flex-shrink: 0;
@@ -1715,3 +1715,20 @@ footer .credits a {
   border-radius: 50%;
 }
 
+.list-ico {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Adjusts the space between the items */
+}
+.list-ico li {
+  display: flex;
+  align-items: center;
+}
+.bi {
+  margin-right: 8px;
+}
+.list-ico a {
+  text-decoration: none;
+  color: inherit;
+}
