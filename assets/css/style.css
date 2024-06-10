@@ -221,32 +221,6 @@ a:hover {
   }
 }
 
-/*------/ Socials /------*/
-.socials {
-  padding: 1.5rem 0;
-}
-
-.socials ul li {
-  display: inline-block;
-}
-
-.socials .ico-circle {
-  height: 40px;
-  width: 40px;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  line-height: 1.6;
-  margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
-  transition: all 500ms ease;
-}
-
-.socials .ico-circle:hover {
-  background-color: #0078ff;
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
-  transition: all 500ms ease;
-}
 
 /*------/ Ul resect /------*/
 .ul-resect,
@@ -1085,6 +1059,54 @@ body, html {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+/* Tabs */
+.tab-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tab {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 20px;
+  margin: 0 5px;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
+  border-radius: 25px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+  color: black;
+  border-radius: 25px;
+}
+
+/* Tab content */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1147,173 +1169,303 @@ body, html {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonial-box {
-  color: #fff;
-  text-align: center;
-}
-
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
-
-.testimonial-box .author-test img {
-  margin: 0 auto;
-}
-
-.testimonial-box .author {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.4rem;
-}
-
-.testimonial-box .comit {
-  font-size: 2rem;
-  color: #0078ff;
-  background-color: #fff;
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  line-height: 1.6;
-}
-
-@media (min-width: 768px) {
-  .testimonial-box .description {
-    padding: 0 5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .testimonial-box .description {
-    padding: 0 8rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .testimonial-box .description {
-    padding: 0 13rem;
-  }
-}
-
-.swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.4);
-  opacity: 1;
-}
-
-.swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #fff;
-}
 
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.footer-paralax {
-  padding: 4rem 0 0 0;
+
+.contact_ab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact_card {
+   
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: #fff;
+    height: 40%;
+    width: 60%;
+    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    padding: 20px;
 }
 
-.contact-mf {
-  margin-top: 4rem;
+#card__top-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 20;
+    padding: 15px;
 }
 
-@media (min-width: 767px) {
-  .contact-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
+
+#card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#text-content {
+    width: 50%;
+}
+
+#card__buttons {
+  padding: 0 15px;
+  display: inline;
+  size: 20px;
+
+
+  a {
+    color: darken(#CBCFD9, 20%);
+    border: 2px solid transparent;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    text-align: center;
+    padding: 0;
+    margin: 0 5px;
+    transition: all 0.4s linear;
+    position: relative;
+    z-index: 8;
+    size: 20px;
+
+    &:hover {
+      color: darken(#CBCFD9, 20%);
+      border-color: darken(#CBCFD9, 20%);
+    }
+
+    &.active {
+      background-color: white;
+    }
   }
 }
-
-.php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
+.menu{
+  size: 120px;
 }
 
-.php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
+.penguin {
+    --penguin-size: 400px;
+    --penguin-skin: #DDA0DD;
+    --penguin-belly: #FFFACD;
+    --penguin-beak: #F4A460;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 120%;
+    box-shadow: 1px 5px 10px orange;
+    flex-shrink: 0;
 }
 
-.php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
+.penguin:hover {
+    transform: scale(0.7);
+    background: linear-gradient(53deg, #B0E0E6, #708090);
+    box-shadow: 1px 5px 10px #708090;
 }
 
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
+.penguin-top,
+.penguin-bottom,
+.right-hand,
+.left-hand,
+.right-cheek,
+.left-cheek,
+.belly,
+.right-feet,
+.left-feet,
+.right-eye,
+.left-eye,
+.sparkle,
+.blush-right,
+.blush-left,
+.beak-top,
+.beak-bottom {
+    position: absolute;
 }
 
-.php-email-form input,
-.php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
+.penguin-top {
+    top: 10%;
+    left: 25%;
+    background: var(--penguin-skin, black);
+    width: 50%;
+    height: 40%;
+    border-radius: 70% 70% 60% 60%;
 }
 
-.php-email-form input:focus,
-.php-email-form textarea:focus {
-  border-color: #0078ff;
+.penguin-bottom {
+    top: 40%;
+    left: 23.5%;
+    background: var(--penguin-skin, black);
+    width: 53%;
+    height: 40%;
+    border-radius: 70% 70% 100% 100%;
 }
 
-.php-email-form input {
-  padding: 10px 15px;
-}
-
-.php-email-form textarea {
-  padding: 12px 15px;
-  margin-bottom: 0;
-}
-
-.php-email-form button[type=submit] {
-  background: #0078ff;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
-
-.php-email-form button[type=submit]:hover {
-  background: #3393ff;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+  .right-hand {
+    top: 0%;
+    left: -5%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 120% 30%;
+    transform: rotate(35deg);
+    z-index: -1;
+  }
+  
+  .left-hand {
+    top: 0.20%;
+    left: 79%;
+    background: var(--penguin-skin, black);
+    width: 30%;
+    height: 60%;
+    border-radius: 30% 30% 30% 120%;
+    transform: rotate(-110deg);
+    z-index: -1;
+    animation-name: left-wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: left-wave;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite; 
   }
 
-  100% {
-    transform: rotate(360deg);
+.right-cheek {
+    top: 15%;
+    left: 35%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+}
+
+.left-cheek {
+    top: 15%;
+    left: 5%;
+    background: var(--penguin-belly, white);
+    width: 60%;
+    height: 70%;
+    border-radius: 70% 70% 60% 60%;
+}
+
+.belly {
+    top: 60%;
+    left: 2.5%;
+    background: var(--penguin-belly, white);
+    width: 95%;
+    height: 100%;
+    border-radius: 120% 120% 100% 100%;
+}
+
+.right-feet {
+    top: 86%;
+    left: 60%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-80deg);
+    z-index: 1;
+}
+
+.left-feet {
+    top: 85%;
+    left: 25%;
+    background: var(--penguin-beak, orange);
+    width: 15%;
+    height: 30%;
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(80deg);
+    z-index: 1;
+}
+
+.right-eye {
+    top: 45%;
+    left: 60%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+}
+
+.left-eye {
+    top: 45%;
+    left: 25%;
+    background: black;
+    width: 15%;
+    height: 17%;
+    border-radius: 50%;
+}
+
+.sparkle {
+    top: 25%;
+    left: 15%;
+    background: #FFFAFA;
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+}
+
+.blush-right {
+    top: 65%;
+    left: 15%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.blush-left {
+    top: 65%;
+    left: 70%;
+    background: pink;
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.beak-top {
+    top: 60%;
+    left: 40%;
+    background: var(--penguin-beak, orange);
+    width: 20%;
+    height: 10%;
+    border-radius: 50%;  
   }
+.beak-bottom {
+    top: 65%;
+    left: 42%;
+    background: var(--penguin-beak, orange);
+    width: 16%;
+    height: 10%;
+    border-radius: 50%; 
+      -webkit-animation-name: bbeak; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite;
+  animation-name: bbeak;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+    
+  }
+@keyframes left-wave {
+     0%  { transform: rotate(-120deg); }
+    10%  { transform: rotate(-110deg); }
+    20%  { transform: rotate(-120deg); }
+    30%  { transform: rotate(-110deg); }
+    40%  { transform: rotate(-120deg); }
+    50%  { transform: rotate(-110deg); }
+    60%  { transform: rotate(-120deg); }
+    70%  { transform: rotate(-110deg); }
+    80%  { transform: rotate(-120deg); }
+    90%  { transform: rotate(-110deg); }
+    100% { transform: rotate(-120deg); }
+  }
+
+@keyframes bbeak{
+  0% {transform: translate(0px, 3px);}
+  10% {transform: translate(0px, 4px);}
+  
 }
 
 /*--------------------------------------------------------------

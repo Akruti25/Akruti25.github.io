@@ -18,6 +18,9 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
   
 
   <!-- Template Main CSS File -->
@@ -53,7 +56,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#education">Education</a></li>
-          <li><a class="nav-link scrollto " href="#projects">Projects</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
           <!-- <li><a class="nav-link scrollto " href="#research">Research</a></li> -->
           <li><a class="nav-link scrollto " href="#experiences">Experiences</a></li>       
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -162,23 +165,39 @@
     
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="projects" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Projects
-              </h3>
-              
-              <div class="line-mf"></div>
-            </div>
-          </div>
+  <!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio-mf sect-pt4 route">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="title-box text-center">
+          <h3 class="title-a">
+            Portfolio
+          </h3>
+          <div class="line-mf"></div>
         </div>
+      </div>
+    </div>
+    <!-- Tab Navigation -->
+    <div class="row">
+      <div class="col-sm-12">
+      <div class="tab-container">
+        <div class="tab">
+          <button class="tablinks active" onclick="openTab(event, 'Projects')">Projects</button>
+          <button class="tablinks" onclick="openTab(event, 'Research')">Research</button>
+          <button class="tablinks" onclick="openTab(event, 'Ongoing')">Ongoing</button>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Tab Content -->
+    <div class="row">
+      <div id="Projects" class="tabcontent" style="display: block;">
         <div class="row">
+          <!-- Project 1 -->
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="https://github.com/Akruti25/Skill-Permission-Analyzer" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/work1.jpg" alt="" class="img-fluid">
                 </div>
@@ -200,9 +219,10 @@
               </div>
             </div>
           </div>
+          <!-- Project 2 -->
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="https://github.com/Akruti25/Evolo-Dashboard-Project-Management-System" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
                 </div>
@@ -226,9 +246,9 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="https://github.com/Akruti25/Melanoma-Skin-Cancer-Detection/tree/main" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -248,9 +268,10 @@
               </div>
             </div>
           </div>
+          <!-- Project 3 -->
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="https://github.com/Akruti25/Database-Management-System-AUTOR" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
                 </div>
@@ -272,9 +293,10 @@
               </div>
             </div>
           </div>
+          <!--Project 5-->
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="https://github.com/Akruti25/Academic-Material-Projects/tree/main/515-Software-Security/Project" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
                 </div>
@@ -296,9 +318,10 @@
               </div>
             </div>
           </div>
+          <!--Project 6-->
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="https://github.com/Akruti25/Research-Projects-Publications/blob/main/Exploring%20Bias%20and%20Fairness%20in%20Resource-Efficient%20Neural%20Networks%20A%20Comparative%20Study.pdf" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
                   <img src="assets/img/work-6.webp" alt="" class="img-fluid">
                 </div>
@@ -306,137 +329,233 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Bias in Resource-Efficient Neural Networks</h2>
+                    <h2 class="w-title">
+                      <a href="https://github.com/Akruti25/Research-Projects-Publications/blob/main/Exploring%20Bias%20and%20Fairness%20in%20Resource-Efficient%20Neural%20Networks%20A%20Comparative%20Study.pdf" target="_blank">Bias in Resource-Efficient Neural Networks</a></h2>
                     <div class="w-more">
                       <span class="w-ctegory">ResNET-34, VGG-16, FPR, Kappa Statistic</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="https://github.com/Akruti25/Research-Projects-Publications/blob/main/Exploring%20Bias%20and%20Fairness%20in%20Resource-Efficient%20Neural%20Networks%20A%20Comparative%20Study.pdf" target="_blank"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+      <div id="Research" class="tabcontent" style="display: none;">
+        <div class="row">
+          <!-- Research 1 -->
+          
+          <!-- Research 2 -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="https://books.google.com/books?hl=en&lr=&id=doikEAAAQBAJ&oi=fnd&pg=PA117&dq=info:sAwwbj7NI74J:scholar.google.com&ots=3TdlNeKFnY&sig=I26FqEr9n9wojZtXdBXlhXM-0Qw#v=onepage&q&f=false" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/research-2.webp" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      <a href="https://books.google.com/books?hl=en&lr=&id=doikEAAAQBAJ&oi=fnd&pg=PA117&dq=info:sAwwbj7NI74J:scholar.google.com&ots=3TdlNeKFnY&sig=I26FqEr9n9wojZtXdBXlhXM-0Qw#v=onepage&q&f=false" target="_blank">Fog Computing for Agriculture Application</a>
+                      </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">IoT, Cloud Computing, Agriculture</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://books.google.com/books?hl=en&lr=&id=doikEAAAQBAJ&oi=fnd&pg=PA117&dq=info:sAwwbj7NI74J:scholar.google.com&ots=3TdlNeKFnY&sig=I26FqEr9n9wojZtXdBXlhXM-0Qw#v=onepage&q&f=false" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Research 3 -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="https://www.eurekaselect.com/article/132015" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/research-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      <a href="https://www.eurekaselect.com/article/132015" target="_blank">Assessing and Mitigating Bias in Artificial Intelligence</a>
+                      </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Bias, AI, Combined Error Variance</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.eurekaselect.com/article/132015" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Research 4 -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="https://books.google.com/books?hl=en&lr=&id=7AmmEAAAQBAJ&oi=fnd&pg=PA81&dq=info:73L4z0Mh4ScJ:scholar.google.com&ots=IFQUw94pIL&sig=bHbAN7SkaCG5fwTJSF2uRsKt9ik#v=onepage&q&f=false" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/research-4.jpeg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      <a href="https://books.google.com/books?hl=en&lr=&id=7AmmEAAAQBAJ&oi=fnd&pg=PA81&dq=info:73L4z0Mh4ScJ:scholar.google.com&ots=IFQUw94pIL&sig=bHbAN7SkaCG5fwTJSF2uRsKt9ik#v=onepage&q&f=false" target="_blank">Big Data Analytics for Smart Healthcare Systems</a>
+                      </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">AI, Big Data, Smart Healthcare </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://books.google.com/books?hl=en&lr=&id=7AmmEAAAQBAJ&oi=fnd&pg=PA81&dq=info:73L4z0Mh4ScJ:scholar.google.com&ots=IFQUw94pIL&sig=bHbAN7SkaCG5fwTJSF2uRsKt9ik#v=onepage&q&f=false" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Research 5 -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="https://www.springer.com/series/15179" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/research-5.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      <a href="https://www.springer.com/series/15179" target="_blank">Stock Market Prediction using ML and NLP</a>
+                      </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">ML, NLP, Stock Market</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.springer.com/series/15179" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Research 6 -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9844186" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/research-6.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      <a href="https://ieeexplore.ieee.org/abstract/document/9844186" target="_blank">Application of Blockchain in Healthcare</a>
+                      </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Blockchain, Security, Healthcare</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://ieeexplore.ieee.org/abstract/document/9844186" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Research 7 -->
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3484824.3484922" target="_blank" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/research-7.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">
+                      <a href="https://dl.acm.org/doi/abs/10.1145/3484824.3484922" target="_blank">Deep Learning for Classification of Chest Radiograph</a>
+                      </h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Deep Learning, Visualization, Classification</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://dl.acm.org/doi/abs/10.1145/3484824.3484922" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more research projects as needed -->
+        </div>
+        </div>
 
-        </div>
+        <div id="Ongoing" class="tabcontent" style="display: none;">
+          <div class="row">
+            <!-- Ongoing 1 -->
+            <div class="col-md-4">
+              <div class="work-box">
+                <a href="https://nicelab.us/NICE-LAB/" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="work-img">
+                    <img src="assets/img/ongoing-1.png" alt="" class="img-fluid">
+                  </div>
+                </a>
+                <div class="work-content">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <h2 class="w-title">
+                        <a href="https://nicelab.us/NICE-LAB/" target="_blank">Multimodal Network Anomaly Detection with LLMs</a>
+                      </h2>                      
+                      <div class="w-more">
+                        <span class="w-ctegory">Python, Networking, LLMs, GPT, BERT</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="w-like">
+                        <a href="https://nicelab.us/NICE-LAB/" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Add more research projects as needed -->
+          </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </div>
+  </div>
+</section>
+<!-- End Portfolio Section -->
   
-    <!-- <section id="research" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Research
-              </h3>
-              <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/img/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Morgan Freeman</span>
-                  </a>
-                </div>
-                <div class="post-date">
-                  <span class="bi bi-clock"></span> 10 min
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
         <!-- ======= Blog Section ======= -->
         <section id="experiences" class="blog-mf sect-pt4 route">
@@ -547,78 +666,69 @@
         </section><!-- End Blog Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
-      <div class="overlay-mf"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        In case of any questions, constructive criticism, or just a friendly chat, feel free to contact me via email and do consider connecting with me on these social media platforms.
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> Raleigh, United States</li>
-                        <li><span class="bi bi-envelope"></span> asinha6@ncsu.edu</li>
-                      </ul>
-                    </div>
-                    
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route">
+    <div class="contact_ab">
+    <div id="contact_card">
+        <div id="card__top-bar">
+         
         </div>
-      </div>
+
+        <div id="card__content">
+            <div id="text-content">
+                <h2 class="single-tab__header">
+                    <span class="my">Get in</span>
+                    Touch!
+                </h2>
+                <p class="single-tab__content">
+                    I'd love to hear from you! Whether you have a question, an opportunity, or just want to chat, I'm always happy to connect. Drop me a line via email, or find me on social media. You can also request my resume here.
+                </p>
+            </div>
+            <div class="penguin">
+                <div class="penguin-bottom">
+                    <div class="right-hand"></div>
+                    <div class="left-hand"></div>
+                    <div class="right-feet"></div>
+                    <div class="left-feet"></div>
+                </div>
+                <div class="penguin-top">
+                    <div class="right-cheek"></div>
+                    <div class="left-cheek"></div>
+                    <div class="belly"></div>
+                    <div class="right-eye">
+                        <div class="sparkle"></div>
+                    </div>
+                    <div class="left-eye">
+                        <div class="sparkle"></div>
+                    </div>
+                    <div class="blush-right"></div>
+                    <div class="blush-left"></div>
+                    <div class="beak-top"></div>
+                    <div class="beak-bottom"></div>
+                </div>
+            </div>
+        </div>
+        <ul class="list-ico">
+          <li><span class="bi bi-geo-alt"></span> Raleigh, United States</li>
+          <li><span class="bi bi-envelope"></span> asinha6@ncsu.edu</li>
+        </ul>
+        <!-- <div id="card__buttons">
+    <ul class="menu">
+      <li><a href="https://dribbble.com" data-social="gmail"></a></li>
+      <li><a href="https://behance.net" data-social="github" ></a></li>
+      <li><a href="https://linkedin.com" data-social="linkedin"></a></li>
+
+    </ul>
+  </div> -->
+  <div>
+    <p>    </p>
+  </div>
+        <div id="card__credits" align="right">
+          <i>"All wisdom ends in paradox."</i>
+        </div>
+    </div>
+    </div>
+
+
     </section><!-- End Contact Section -->
     <center><font size="1">This country counter shows visits to this landing page since June 4, 2024. <a href="https://www.revolvermaps.com/" target="_blank">Credits</a></font></center><script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5bawwz8nko0&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
 
@@ -638,7 +748,7 @@
         </div>
       </div>
     </div>
-  </footer>End  Footer
+  </footer>
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -653,6 +763,24 @@
 
   <!-- Template Main JS File -->
   <script type="module" src="assets/js/main.js"></script>
+  <script>
+    function openTab(evt, tabName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+  </script>
 
 </body>
 
