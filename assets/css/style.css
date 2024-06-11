@@ -1186,7 +1186,7 @@ body, html {
     position: relative;
     background-color: #fff;
     height: 40%;
-    width: 60%;
+    width: 50%;
     box-shadow: 0 12px 38px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     padding: 20px;
@@ -1212,40 +1212,7 @@ body, html {
     width: 50%;
 }
 
-#card__buttons {
-  padding: 0 15px;
-  display: inline;
-  size: 20px;
 
-
-  a {
-    color: darken(#CBCFD9, 20%);
-    border: 2px solid transparent;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    text-align: center;
-    padding: 0;
-    margin: 0 5px;
-    transition: all 0.4s linear;
-    position: relative;
-    z-index: 8;
-    size: 20px;
-
-    &:hover {
-      color: darken(#CBCFD9, 20%);
-      border-color: darken(#CBCFD9, 20%);
-    }
-
-    &.active {
-      background-color: white;
-    }
-  }
-}
-.menu{
-  size: 120px;
-}
 
 .penguin {
     --penguin-size: 400px;
@@ -1253,9 +1220,9 @@ body, html {
     --penguin-belly: #FFFACD;
     --penguin-beak: #F4A460;
     position: relative;
-    width: 150px;
-    height: 150px;
-    border-radius: 120%;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
     box-shadow: 1px 5px 10px orange;
     flex-shrink: 0;
 }
