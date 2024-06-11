@@ -16,17 +16,17 @@ import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/thre
     gpgpuSize: 512,
     colors: [0x00ff00, 0x0000ff],
     color: 0xff0000,
-    coordScale: 0.5,
-    noiseIntensity: 0.001,
+    coordScale: 2.0,         // Increased from 0.5 to 1.0
+    noiseIntensity: 0.0005,  // Decreased from 0.001 to 0.0005
     noiseTimeCoef: 0.0001,
     pointSize: 5,
     pointDecay: 0.0025,
     sleepRadiusX: 250,
     sleepRadiusY: 250,
-    sleepTimeCoefX: 0.001,
-    sleepTimeCoefY: 0.002
-  })
-  
+    sleepTimeCoefX: 0.0005,  // Decreased from 0.001 to 0.0005
+    sleepTimeCoefY: 0.0005    // Decreased from 0.002 to 0.001
+});
+
   document.body.addEventListener('click', () => {
     pc.uniforms.uColor.value.set(Math.random() * 0xffffff)
     pc.uniforms.uCoordScale.value = 0.001 + Math.random() * 2
@@ -186,63 +186,6 @@ import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/thre
     }
   });
 
-  /**
-   * Intro type effect
-   */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
 
   /**
    * Preloader
