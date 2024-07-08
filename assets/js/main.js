@@ -203,7 +203,19 @@ import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/thre
   new PureCounter();
 
   // main.js
-  //education section
-  
+  //experiences section
+  var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+      invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+      el: '.blog-slider__pagination',
+      clickable: true,
+    }
+  });
   
 })()
