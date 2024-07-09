@@ -1447,18 +1447,19 @@ body, html {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
+  
 }
 
 @media screen and (max-width: 992px) {
   .blog-slider {
     max-width: 680px;
-    height: 400px;
+    height: 1000px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .blog-slider {
-    min-height: 500px;
+    min-height: 1000px;
     height: auto;
     margin: 180px auto;
   }
