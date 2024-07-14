@@ -179,7 +179,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #1e1e1e;
   margin: 0 auto;
 }
 
@@ -245,79 +245,10 @@ a:hover {
   margin-right: 10px;
 }
 
-/*------/ Ico Circle /------*/
-.ico-circle {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border-radius: 50%;
-  line-height: 1.55;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
-  display: block;
-}
 
 
-/*--/ Scrolltop s /--*/
-.scrolltop-mf {
-  position: relative;
-  display: none;
-}
 
-.scrolltop-mf span {
-  z-index: 999;
-  position: fixed;
-  width: 42px;
-  height: 42px;
-  background-color: #0078ff;
-  opacity: 0.7;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
-  top: auto;
-  left: auto;
-  right: 30px;
-  bottom: 50px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #0078ff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-
-.back-to-top:hover {
-  background: #298eff;
-  color: #fff;
-}
-
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*------/ Prelaoder /------*/
+/*------/ Prelaoder /------
 #preloader {
   position: fixed;
   top: 0;
@@ -351,7 +282,7 @@ a:hover {
     transform: rotate(360deg);
   }
 }
-
+*/
 /*------/ Button /------*/
 .button {
   display: inline-block;
@@ -1201,14 +1132,14 @@ body, html {
 .wrapper .gmail:hover,
 .wrapper .gmail:hover .tooltip,
 .wrapper .gmail:hover .tooltip::before {
-  background: #1DA1F2;
+  background: #E4405F;
   color: #ffffff;
 }
 
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-  background: #E4405F;
+  background: #1DA1F2;
   color: #ffffff;
 }
 
@@ -1222,7 +1153,7 @@ body, html {
 .wrapper .resume:hover,
 .wrapper .resume:hover .tooltip,
 .wrapper .resume:hover .tooltip::before {
-  background: #CD201F;
+  background: #A2678A;
   color: #ffffff;
 }
 /* Media Queries for Responsive Design */
@@ -1567,7 +1498,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: rgba(0, 0, 0, 0.9);
 }
 
 footer .copyright {
