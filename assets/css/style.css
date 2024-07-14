@@ -882,6 +882,7 @@ body, html {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  border-radius: 5%;
 }
 
 .work-box:hover img {
@@ -891,6 +892,7 @@ body, html {
 .work-img {
   display: block;
   overflow: hidden;
+  border-radius: 5%;
 }
 
 .work-img img {
@@ -902,22 +904,22 @@ body, html {
 }
 
 .work-content .w-more {
-  color: #4e4e4e;
+  color: rgb(86, 86, 86);
   font-size: 0.8rem;
 }
 
 .work-content .w-more .w-ctegory {
-  color: #0078ff;
+  color: rgb(86, 86, 86);
 }
 
 .work-content .w-like {
   font-size: 2.5rem;
-  color: #0078ff;
+  color: rgb(86, 86, 86);
   float: right;
 }
 
 .work-content .w-like a {
-  color: #0078ff;
+  color: rgb(86, 86, 86);
 }
 
 .work-content .w-like .num-like {
