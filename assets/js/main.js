@@ -5,34 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
 
-(function() {
-  "use strict";
-
-
-  const pc = particlesCursor({
-    el: document.getElementById('app'),
-    gpgpuSize: 512,
-    colors: [0x00ff00, 0x0000ff],
-    color: 0xff0000,
-    coordScale: 2.0,         // Increased from 0.5 to 1.0
-    noiseIntensity: 0.0005,  // Decreased from 0.001 to 0.0005
-    noiseTimeCoef: 0.0001,
-    pointSize: 5,
-    pointDecay: 0.0025,
-    sleepRadiusX: 250,
-    sleepRadiusY: 250,
-    sleepTimeCoefX: 0.0005,  // Decreased from 0.001 to 0.0005
-    sleepTimeCoefY: 0.0005    // Decreased from 0.002 to 0.001
-});
-
-  document.body.addEventListener('click', () => {
-    pc.uniforms.uColor.value.set(Math.random() * 0xffffff)
-    pc.uniforms.uCoordScale.value = 0.001 + Math.random() * 2
-    pc.uniforms.uNoiseIntensity.value = 0.0001 + Math.random() * 0.001
-    pc.uniforms.uPointSize.value = 1 + Math.random() * 10
-  })
   
 
   /**
@@ -217,5 +190,45 @@ import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/thre
       clickable: true,
     }
   });
-  
-})()
+  //landing
+  /* Credit and Thanks:
+Matrix - Particles.js;
+SliderJS - Ettrics;
+Design - Sara Mazal Web;
+Fonts - Google Fonts
+*/
+
+window.onload = function () {
+  Particles.init({
+    selector: ".background"
+  });
+};
+
+const particles = Particles.init({
+  selector: ".background",
+  color: ["#E4003A", "#EB5B00", "#FFB200"],
+  connectParticles: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      options: {
+        color: ["#E4003A", "#EB5B00", "#FFB200"],
+        connectParticles: true // Keep connectParticles enabled
+      }
+    },
+    {
+      breakpoint: 480,
+      options: {
+        color: ["#E4003A", "#EB5B00", "#FFB200"],
+        connectParticles: true // Keep connectParticles enabled
+      }
+    }
+  ]
+});
+
+/* Credit and Thanks:
+Matrix - Particles.js;
+SliderJS - Ettrics;
+Design - Sara Mazal Web;
+Fonts - Google Fonts
+*/
